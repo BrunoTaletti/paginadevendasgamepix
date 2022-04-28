@@ -1,0 +1,275 @@
+/* importando fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;   
+}
+
+/* Cor de fundo headline */
+header{
+    background-image: linear-gradient(to right, #ef42f5, #f54281);
+}
+
+/* Cor de fundo rodapé */
+footer{
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.container{
+    align-items: center;
+    display: flex-box;
+    justify-content: center;
+    width: 100%;
+}
+
+.padding{
+    padding: 5%;
+}
+
+/* Tamanho do logo header */
+.logo{
+    width: 15%;
+}
+
+/* Tamanho do logo rodapé */
+.pacman{
+    width: 15%;
+}
+
+/* Tamanho da VSL */
+.vsl{
+    width: 50%;
+    margin: auto;
+}
+
+.title{
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Tamanho da fonte headline */
+.headline{
+    font-size: 25px;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.light{
+    font-weight: 200;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.d-none{
+    display: none;
+}
+
+.white{
+    color: #fff;
+}
+
+/* Cor dos indicadores da VSL */
+.purple{
+    color: #c300ff;
+}
+
+.divisor{
+    padding: 0 1%;
+}
+
+.line-break{
+    overflow-wrap: break-word;
+}
+
+/* Tamanho da fonte dos indicadores da VSL */
+.indicators{
+    font-size: 18px;
+}
+
+/* Tamanho da fonte dos textos do rodapé */
+.copyright{
+    font-size: 13px;
+}
+
+.btn{
+    border: none;
+    margin: auto;
+    width: 80%;
+}
+
+/* Cor do botão de checkout e duração da animação pulsar */
+.checkout{
+    background-image: linear-gradient(to right, #ff7300, #ff3c00);
+    font-size: 25px;
+    padding: 2%;
+    animation-name: pulse;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+}
+
+.padding-top-small{
+    padding-top: 1%;
+}
+
+.padding-top-normal{
+    padding-top: 2%;
+}
+
+.padding-top-big{
+    padding-top: 5%;
+}
+
+.padding-bottom-small{
+    padding-bottom: 1%;
+}
+
+.padding-bottom-normal{
+    padding-bottom: 2%;
+}
+
+.padding-bottom-big{
+    padding-bottom: 5%;
+}
+
+.padding-side{
+    padding: 0 5%;
+}
+
+.inline{
+    display: inline; 
+}
+
+.bordered{
+    border-radius: 20px;
+}
+
+.shadow{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2) ;
+}
+
+/* ANIMAÇÕES */
+@keyframes pulse {
+    0% {
+        transform: scale(0.6);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+/* Design Responsivo */
+
+/* Celulares */
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 60%;
+    }
+
+    .headline{
+        font-size: 20px;
+    }
+
+    .vsl{
+        width: 90%;
+    }
+
+    .checkout{
+        font-size: 30px;
+        padding: 5%;
+    }
+
+    .pacman{
+        width: 30%;
+    }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    .logo{
+      width: 40%;
+    }
+
+    .headline{
+        font-size: 30px;
+    }
+
+    .vsl{
+        width: 90%;
+    }
+
+    .checkout{
+       font-size: 30px;
+       padding: 5%;
+    }
+
+    .pacman{
+        width: 20%;
+    }
+  }
+
+/* Notebooks e Desktops */
+@media only screen and (min-width: 992px) {
+    .logo{
+      width: 40%;
+    }
+
+    .headline{
+        font-size: 30px;
+    }
+
+    .vsl{
+        width: 90%;
+    }
+
+    .checkout{
+       font-size: 30px;
+       padding: 5%;
+    }
+
+    .pacman{
+        width: 20%;
+    }
+  }
+
+/* Notebooks e Desktops maiores */
+@media only screen and (min-width: 1200px){
+    .logo{
+        width: 20%;
+    }
+
+    .headline{
+        font-size: 30px;
+    }
+
+    .vsl{
+        width: 60%;
+    }
+
+    .checkout{
+        font-size: 30px;
+        padding: 2%;
+    }
+
+    .pacman{
+        width: 10%;
+    }
+}
